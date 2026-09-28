@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Data deletion · Content Lab</title>
+  <meta name="description" content="How to revoke Content Lab's access on Instagram, Google, TikTok and Zernio, and how to delete the information it keeps.">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="../" aria-label="Content Lab home">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#1f5c4d"/><path d="M9 16a5 5 0 0 1 8.5-3.5l1 1 1-1A5 5 0 1 1 19.5 19.5l-1-1-1 1A5 5 0 0 1 9 16Z" fill="none" stroke="#f7f6f2" stroke-width="2.4" stroke-linejoin="round"/></svg>
+        Content Lab
+      </a>
+      <nav aria-label="Site">
+        <ul>
+          <li><a href="../">About</a></li>
+          <li><a href="../privacy/">Privacy</a></li>
+          <li><a href="../terms/">Terms</a></li>
+          <li><a href="./" aria-current="page">Data deletion</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+      <h1>Data deletion</h1>
+      <p class="meta">Last updated 28 September 2026</p>
+      <p>Content Lab only connects to accounts belonging to its owner, and keeps what it collects on the owner's computer. This page explains how to stop each connection and how to delete what Content Lab keeps. The <a href="../privacy/">privacy policy</a> describes that information in full.</p>
+
+      <div class="note">
+        <p>If you think Content Lab holds information about you, or you want information deleted, email <a href="mailto:tomplum.content@gmail.com">tomplum.content@gmail.com</a>. The owner will reply, tell you what Content Lab holds, and confirm once it has been deleted.</p>
+      </div>
+
+      <h2>1. Revoke access</h2>
+      <h3>Instagram</h3>
+      <ul>
+        <li>Remove the app under Apps and websites in the Instagram account's settings (<a href="https://www.instagram.com/accounts/manage_access/">instagram.com/accounts/manage_access</a>).</li>
+        <li>Delete the account's access token from Content Lab's local configuration. Without it, Content Lab cannot reach the account.</li>
+      </ul>
+      <h3>Google and YouTube</h3>
+      <ul>
+        <li>Revoke Content Lab's access via the Google security settings page at <a href="https://security.google.com/settings/security/permissions">https://security.google.com/settings/security/permissions</a>.</li>
+        <li>Disconnect on Content Lab's local YouTube page. This deletes the saved sign-in credentials, channel identity and any sign-in in progress, but keeps analytics and publishing records, and does not revoke access at Google by itself.</li>
+      </ul>
+      <h3>TikTok and YouTube publishing through Zernio</h3>
+      <ul>
+        <li>Disconnect the account in Zernio, or remove Zernio's access in the TikTok or Google account's settings for connected apps.</li>
+        <li>Delete the Zernio key from Content Lab's local configuration.</li>
+      </ul>
+
+      <h2>2. Delete what Content Lab keeps</h2>
+      <ul>
+        <li><strong>YouTube analytics:</strong> delete the analytics file in Content Lab's private YouTube data folder.</li>
+        <li><strong>Instagram insights and publishing details:</strong> these are held in Content Lab's local workspace database. Delete them from the workspace and from its history of earlier versions, or delete the database.</li>
+        <li><strong>TikTok and YouTube publishing records:</strong> held in local databases, one per platform. Delete them only after checking that no publication is still in progress or unresolved. Content Lab uses these records to confirm whether an attempt reached the platform, and deleting an unresolved one could lead to the same video being published twice.</li>
+      </ul>
+
+      <h2>3. What Content Lab cannot delete for you</h2>
+      <p>Published videos, and the copies and records held by Instagram, TikTok, YouTube and Zernio, are kept by those services under their own policies. Delete videos in the Instagram, TikTok or YouTube apps, delete posts and media in Zernio, and use each service's own tools to delete account data.</p>
+    </div>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <p>Content Lab is operated by Tom Plumpton for personal use.</p>
+      <p><a href="../privacy/">Privacy policy</a> · <a href="../terms/">Terms of service</a> · <a href="../data-deletion/">Data deletion</a> · <a href="mailto:tomplum.content@gmail.com">Contact</a></p>
+    </div>
+  </footer>
+</body>
+</html>

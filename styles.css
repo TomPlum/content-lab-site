@@ -44,6 +44,7 @@ body {
 a {
   color: var(--accent);
   text-underline-offset: 0.18em;
+  overflow-wrap: anywhere;
 }
 
 a:hover {
