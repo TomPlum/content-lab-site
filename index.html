@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Content Lab</title>
+  <meta name="description" content="Content Lab is a private, locally operated tool its owner uses to prepare, publish and review original videos for the Loop Mechanics YouTube channel.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="./" aria-label="Content Lab home">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#1f5c4d"/><path d="M9 16a5 5 0 0 1 8.5-3.5l1 1 1-1A5 5 0 1 1 19.5 19.5l-1-1-1 1A5 5 0 0 1 9 16Z" fill="none" stroke="#f7f6f2" stroke-width="2.4" stroke-linejoin="round"/></svg>
+        Content Lab
+      </a>
+      <nav aria-label="Site">
+        <ul>
+          <li><a href="./" aria-current="page">About</a></li>
+          <li><a href="privacy/">Privacy policy</a></li>
+          <li><a href="terms/">Terms of service</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+      <h1>Content Lab</h1>
+      <p class="lede">Content Lab is a private application that Tom Plumpton runs on his own computer to prepare, publish and review original short videos for his YouTube channel, <a href="https://www.youtube.com/@loopmechanics">Loop Mechanics</a>.</p>
+      <p>This website provides information about the application and its policies. It does not host the application, and it offers no sign-in. Nobody other than its owner can use Content Lab.</p>
+      <ul class="links">
+        <li><a class="button primary" href="privacy/">Privacy policy</a></li>
+        <li><a class="button" href="terms/">Terms of service</a></li>
+      </ul>
+
+      <h2>What it does</h2>
+      <ul>
+        <li>Keeps a local workspace of original videos, captions and titles, and records the owner's review before anything is published.</li>
+        <li>Sends approved videos and their text to <a href="https://zernio.com/">Zernio</a>, a social media scheduling service, which publishes them to the owner's YouTube channel.</li>
+        <li>Reads the owner's YouTube channel identity and channel analytics through Google's YouTube APIs, so the owner can check which channel is connected and how it is performing.</li>
+      </ul>
+
+      <h2>How it connects to YouTube</h2>
+      <div class="cards">
+        <section class="card" aria-labelledby="google-connection">
+          <h3 id="google-connection">Google sign-in</h3>
+          <p>The owner signs in with Google to let Content Lab read the Loop Mechanics channel's identity and analytics through the YouTube Data API and YouTube Analytics API. This connection belongs to the “Content Lab” Google app.</p>
+        </section>
+        <section class="card" aria-labelledby="zernio-connection">
+          <h3 id="zernio-connection">Publishing through Zernio</h3>
+          <p>The channel is connected to Zernio separately, in the owner's Zernio account. Content Lab uses Zernio's API to schedule and publish approved videos. It does not upload videos to YouTube directly.</p>
+        </section>
+      </div>
+      <p>Both connections, and the records they produce, stay on the owner's computer. The <a href="privacy/">privacy policy</a> explains what each one accesses, where it is stored and how to remove it.</p>
+
+      <h2>Google user data</h2>
+      <p>Content Lab uses the YouTube API Services. Content Lab's use of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+      <h2>Contact</h2>
+      <p>Questions or complaints about Content Lab: <a href="mailto:tomplum.content@gmail.com">tomplum.content@gmail.com</a>.</p>
+    </div>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <p>Content Lab is operated by Tom Plumpton for personal use.</p>
+      <p><a href="privacy/">Privacy policy</a> · <a href="terms/">Terms of service</a> · <a href="mailto:tomplum.content@gmail.com">Contact</a></p>
+    </div>
+  </footer>
+</body>
+</html>
