@@ -30,7 +30,7 @@
   <main id="main">
     <div class="wrap">
       <h1>Data deletion</h1>
-      <p class="meta">Last updated 28 September 2026</p>
+      <p class="meta">Last updated 6 October 2026</p>
       <p>Content Lab only connects to accounts belonging to its owner, and keeps what it collects on the owner's computer. This page explains how to stop each connection and how to delete what Content Lab keeps. The <a href="../privacy/">privacy policy</a> describes that information in full.</p>
 
       <div class="note">
@@ -42,6 +42,11 @@
       <ul>
         <li>Remove the app under Apps and websites in the Instagram account's settings (<a href="https://www.instagram.com/accounts/manage_access/">instagram.com/accounts/manage_access</a>).</li>
         <li>Delete the account's access token from Content Lab's local configuration. Without it, Content Lab cannot reach the account.</li>
+      </ul>
+      <h3>Facebook</h3>
+      <ul>
+        <li>Remove the app under Business integrations in the Facebook account's settings (<a href="https://www.facebook.com/settings?tab=business_tools">facebook.com/settings?tab=business_tools</a>). This invalidates the Page token.</li>
+        <li>Delete the Page token from Content Lab's local configuration.</li>
       </ul>
       <h3>Google and YouTube</h3>
       <ul>
@@ -57,12 +62,12 @@
       <h2>2. Delete what Content Lab keeps</h2>
       <ul>
         <li><strong>YouTube analytics:</strong> delete the analytics file in Content Lab's private YouTube data folder.</li>
-        <li><strong>Instagram insights and publishing details:</strong> these are held in Content Lab's local workspace database. Delete them from the workspace and from its history of earlier versions, or delete the database.</li>
-        <li><strong>TikTok and YouTube publishing records:</strong> held in local databases, one per platform. Delete them only after checking that no publication is still in progress or unresolved. Content Lab uses these records to confirm whether an attempt reached the platform, and deleting an unresolved one could lead to the same video being published twice.</li>
+        <li><strong>Instagram and Facebook insights, and Instagram publishing details:</strong> these are held in Content Lab's local workspace database. Delete them from the workspace and from its history of earlier versions, or delete the database.</li>
+        <li><strong>Facebook, TikTok and YouTube publishing records:</strong> held in local databases, one per platform. Delete them only after checking that no publication is still in progress or unresolved. Content Lab uses these records to confirm whether an attempt reached the platform, and deleting an unresolved one could lead to the same video being published twice.</li>
       </ul>
 
       <h2>3. What Content Lab cannot delete for you</h2>
-      <p>Published videos, and the copies and records held by Instagram, TikTok, YouTube and Zernio, are kept by those services under their own policies. Delete videos in the Instagram, TikTok or YouTube apps, delete posts and media in Zernio, and use each service's own tools to delete account data.</p>
+      <p>Published videos, and the copies and records held by Instagram, Facebook, TikTok, YouTube and Zernio, are kept by those services under their own policies. Delete videos in the Instagram, Facebook, TikTok or YouTube apps, delete posts and media in Zernio, and use each service's own tools to delete account data.</p>
     </div>
   </main>
 
